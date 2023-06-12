@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Cambio de Divisas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cambio de Divisas</h1>
+        <form>
+            <label for="cantidad">Cantidad:</label>
+            <input type="any" id="cantidad" name="cantidad">
+                   
+            <label for="monedaOrigen">Moneda de Origen:</label>
+            <select id="monedaOrigen" name="monedaOrigen">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="MXN">MXN</option>
+            </select>
+           
+            <label for="monedaDestino">Moneda de Destino:</label>
+            <select id="monedaDestino" name="monedaDestino">
+                <option value="MXN">MXN</option>
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+            </select>
+           
+            <input type="submit" value="Calcular" id="calcular">
+        </form>
+     
+        <div id="resultado"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
